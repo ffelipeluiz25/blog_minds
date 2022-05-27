@@ -2,10 +2,12 @@ import React from 'react';
 
 function mostraMenu() {
     var element = document.getElementById("navbarHeader");
-    if (element.style.display == 'none')
-        element.style.display = 'block';
-    else
-        element.style.display = 'none';
+    if (element != null) {
+        if (element.style.display == 'none')
+            element.style.display = 'block';
+        else
+            element.style.display = 'none';
+    }
 }
 
 export const Header = () => {
